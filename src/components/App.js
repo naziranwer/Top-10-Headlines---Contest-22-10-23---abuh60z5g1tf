@@ -36,7 +36,7 @@ const App = () => {
         <option value="entertainment">Entertainment</option>
         <option value="science">Science</option>
       </select>
-      <p className='loader'>Loading...</p>
+      {loading ? <p className='loader'>Loading...</p> :
       <ol>
         {newsData.map((news, index) => (
           <li key={index}>
