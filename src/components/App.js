@@ -36,7 +36,7 @@ const App = () => {
         <option value="entertainment">Entertainment</option>
         <option value="science">Science</option>
       </select>
-      {loading ? <p className='loader'>Loading...</p> : null}
+      {loading ? <p className='loader'>Loading...</p> : 
       <ol>
         {newsData.map((news, index) => (
           <li key={index}>
@@ -51,6 +51,7 @@ const App = () => {
           </li>
         ))}
       </ol>
+      }
     </div>
   );
 }
